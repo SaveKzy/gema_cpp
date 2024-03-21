@@ -5,11 +5,9 @@ using namespace std;
 
 int main() {
 
-    //error
-
     int ia, ib, fa, fb, a, b;
-
-    cin >> ia, ib, fa, fb;
+    
+    cin >> ia >> ib >> fa >> fb;
 
     a = (ia + fa) %2;
     b = (ib + fb) %2;
