@@ -6,7 +6,7 @@ Exercícios - GEMA:
 
 (Word)
 
-Watermelon [melancia.cpp] - https://codeforces.com/problemset/problem/4/A
+Watermelon [melancia.cpp] - https://codeforces.com/problemset/problem/4/A\n
 Calculating Function [funcao.cpp] - https://codeforces.com/problemset/problem/486/A
 Johny Likes Numbers [johny.cpp] - https://codeforces.com/problemset/problem/678/A
 Soldier and Bananas [banana.cpp] - https://codeforces.com/problemset/problem/546/A
