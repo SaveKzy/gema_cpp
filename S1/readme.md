@@ -12,11 +12,11 @@ Calculating Function [funcao.cpp] - https://codeforces.com/problemset/problem/48
 
 Johny Likes Numbers [johny.cpp] - https://codeforces.com/problemset/problem/678/A
 
-Soldier and Bananas [banana.cpp] - https://codeforces.com/problemset/problem/546/A
+Soldier and Bananas [banana2.cpp] - https://codeforces.com/problemset/problem/546/A
 
 Petr and a calendar [calendario.cpp] - https://codeforces.com/problemset/problem/760/A
 
-Bicycle Race (Desafio) [corrida.cpp] - https://codeforces.com/contest/659/problem/D
+Bicycle Race (Desafio) [corrida2.cpp] - https://codeforces.com/contest/659/problem/D
 
 (Excel)
 
@@ -32,9 +32,9 @@ Função [funcao.cpp] - https://codeforces.com/problemset/problem/486/A
 
 Números [johny.cpp] - https://codeforces.com/problemset/problem/678/A
 
-Bananas [banana.cpp] - https://codeforces.com/problemset/problem/546/A
+Bananas [banana2.cpp] - https://codeforces.com/problemset/problem/546/A
 
-Corrida [corrida.cpp] - https://codeforces.com/problemset/problem/760/A
+Corrida [corrida2.cpp] - https://codeforces.com/problemset/problem/760/A
 
 Mais ou Menos [maisOuMenos.cpp] - https://codeforces.com/contest/1807/problem/A
 
