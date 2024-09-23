@@ -1,0 +1,17 @@
+vector<int> vec;
+int timer;
+int tin[maxn], tout[maxn];
+
+void dfs(int v, int p){   
+    
+    vec.pushback(v); tin[v] = timer++;
+
+    for(auto a : grafo[v]){
+        if(a == p) continue;
+        dfs(a, v);
+    }
+    
+    tout[v] = timer++;
+
+    vec.push_back(v);
+}

@@ -1,0 +1,18 @@
+1)Estados
+     como guardar valores e quando muda-los
+2)Transição
+     como resolver o problema quebrando em problemas menores
+3)Caso base
+     caso base para saída da recursão
+
+
+resolução top-down (recursivo)
+    calcular a raiz e todos os os nós até as folhas para chegar ao resultado
+resolução bottom-up(iterativo)
+    calcular todas as folhas e os nós até a raíz para chegar no resultado
+
+complexidade
+    multiplicação dos estados pela transição dos estados
+
+memset(nome, valor, tamanho)
+    coloca todos os valores vom o valor fornecido

@@ -1,0 +1,18 @@
+
+Em grafos sem ciclo e direcionais
+1) Inicializar os graus
+
+2) Adicionar todos de grau 0 em um vector
+
+3) Realiza a seguinte operação até o vector ficar vazio
+	Pega o 1º elemento do vector e adiciona na sequência topológica
+	Itera pela vizinhança desse vértice reduzindo em 1 o grau de cada vizinho
+	Se o grau desse vizinho chegou a 0, adiciona no vector
+	Verifica se a sequência topológica tem tamanho N(quantidade de conexões)
+
+usando DFS
+	sempre quando SAIR do vértice em uma dfs, adicionar na sequência toplógica
+	essa sequência ficará ao contrário
+	nesse caso sempre teremos a sequência com tamanho N, mesmo com ciclo
+	
+	Quando na saída do ciclo houver algum vizinho com visitado 1, (somar 1 na entrada e 2 na saída)

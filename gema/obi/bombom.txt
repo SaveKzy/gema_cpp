@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+    char dominante;
+    cin >> dominante >> dominante;
+
+    char fig, naipe;
+
+    int n = 6, L = 0, E = 0, val;
+    while (n--) {
+        val = 0;
+
+        cin >> fig >> naipe;
+
+        if (fig == 'A') val = 10;
+        else if (fig == 'J') val = 11;
+        else if (fig == 'Q') val = 12;
+        else val = 13;
+
+        if (naipe == dominante) val += 4;
+
+
+        if (n >= 3) L += val;
+        else E += val;
+    }
+
+    if (L > E) cout << "Luana\n";
+    else if (E > L) cout << "Edu\n";
+    else cout << "empate\n";
+
+}

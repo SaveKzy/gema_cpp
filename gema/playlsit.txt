@@ -1,0 +1,43 @@
+// https://cses.fi/problemset/task/1141
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+    int in; cin >> in;
+    vector<int> vec;
+
+    for (int i = 0; i < in; i++) {
+        int list_in; cin >> list_in;
+        vec.push_back(list_in);
+    }
+
+    int start = 0, end = 0, middle;
+    int maxN = 1, now = 1;
+
+    end++;
+
+    while (end < in) {
+        
+        bool flag = true;
+
+        for (middle = start; middle < end; middle++) {
+            if (vec[middle] == vec[end]) {
+                flag = false;
+            }
+        }
+
+        if (flag) {
+            now++;
+            maxN = max(maxN, now);
+            end++;            
+        } else {
+            start += 1;
+            now -= 1;
+        }        
+
+    }
+
+    cout << maxN << "\n";
+}

@@ -1,0 +1,51 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+const int inf = 1e9+5;
+int dx[4] = {0,0,1,-1};
+int dy[4] = {-1,1,0,0};
+int vis[maxn][maxn];
+queue<pii> fila;
+
+bool valid(int i, int j){
+    if(i>=1 && i<=n && j>=1 j <=m && !vis[i][j] && g[i][j] !='#')return 1;
+    return 0;
+}
+
+
+void bfs(){
+    while(!fila.empty()){
+        auto at = fila.front(); fila.pop();
+        for(int i = 0; i < 4; i++){
+            int ni = at.first + dx[i], nj = at.second + dy[i];
+            if(!valid(ni, nj)) continue;
+            dis[ni][nj] = dist[at.first][at.second] +1; vis[at.first][at.second] = 1;
+            fila.push({ni,nj});
+        }
+    }
+}
+
+void bfs_pessoa(){
+    for(int i=1; i<=n; i++){
+        for (j=1; k<=m;j++){
+            d[i][j]= inf;
+        }
+    }
+}
+
+
+int main(){
+    
+    cin >>n >>m; 
+
+    for( int i=1;i<=n; i++){
+        for (int j=1;j<=m; j++){
+            cin >> g[i][j];
+            dist[i][j] = inf;
+        }
+    }
+
+    return 1;
+}
+
+maybe wrong

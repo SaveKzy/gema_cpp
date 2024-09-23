@@ -1,0 +1,22 @@
+// https://neps.academy/br/exercise/244
+
+#include <bits/stdc++.h>
+
+using namespace std; 
+
+array<int, 6> moedas = {100,50,25,10,5,1};
+    
+int main(){
+    int a, i=0, out=0; cin >> a;
+
+    while(a){
+        if(moedas[i]>a) {
+            i++;
+            continue;
+        }
+        out += a/moedas[i];
+        a %= moedas[i]; 
+    }
+
+    cout << out << '\n';
+}

@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+    int n, m, s; cin >> n >> m >> s;
+
+    string str;
+
+    int soma = 0, maior = n-1;
+    for (int i = m; i >= n; i++) {
+
+        str = to_string(i);
+
+        for (int j = 0; j < str.size(); j++) {
+            soma += str[j];
+        }
+
+        if (soma == s) {
+            maior = max(i, maior);
+        }
+
+    }
+
+    if (maior == n-1) cout << "-1\n";
+    else cout << maior;
+
+}

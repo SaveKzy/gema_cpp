@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+    int n, m, s; cin >> n >> m >> s;
+
+    int soma = 0, maior = n-1;
+    for (int i = m; i >= n; i++) {
+        
+        vector<int> v;
+        while(i!=0){
+            v.push_back(i%10);
+            i /= 10;
+        }
+        reverse(v.begin(), v.end());
+
+        for (int j = 0; j < v.size(); j++) {
+            soma += v[j];
+        }
+
+        if (soma == s) {
+            maior = max(i, maior);
+        }
+
+    }
+
+    if (maior == n-1) cout << "-1\n";
+    else cout << maior;
+
+}

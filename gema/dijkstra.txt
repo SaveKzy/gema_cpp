@@ -1,0 +1,10 @@
+
+Distância mínima
+
+1) Inicializar todas as distâncias para infinito
+2) trocar as distâncias dos vizinhos se: distância_atual > distancia_anterior + peso_vertice
+3) colocar elementos trocados em uma priority queue. (fila ordenada do menor para o maior)
+
+para recuperar o caminho mínimo
+	Sempre que entrar em um vértice dentro do passo 2, salvar o antecessor dele
+	Partir do destino e pegar todos os antecessores até a origem
